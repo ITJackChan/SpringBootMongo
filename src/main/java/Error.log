@@ -1,0 +1,50 @@
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.1.RELEASE)
+
+2018-05-02 21:00:08.838  INFO 6364 --- [           main] com.itchen.SpringBootMongoApplication    : Starting SpringBootMongoApplication on Chen-PC with PID 6364 (D:\eclipse-workspace\SpringBootMongo\target\classes started by Chen in D:\eclipse-workspace\SpringBootMongo)
+2018-05-02 21:00:08.843  INFO 6364 --- [           main] com.itchen.SpringBootMongoApplication    : No active profile set, falling back to default profiles: default
+2018-05-02 21:00:08.927  INFO 6364 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67f639d3: startup date [Wed May 02 21:00:08 CST 2018]; root of context hierarchy
+2018-05-02 21:00:10.665  INFO 6364 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-05-02 21:00:10.702  INFO 6364 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-02 21:00:10.702  INFO 6364 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-02 21:00:10.714  INFO 6364 --- [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\ProgramFiles\Java\jdk1.8.0_91\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\ProgramFiles\Java\jdk1.8.0_91\jre\bin;D:/ProgramFiles/Java/JRE8_update/bin/server;D:/ProgramFiles/Java/JRE8_update/bin;D:/ProgramFiles/Java/JRE8_update/lib/amd64;C:\ProgramData\Oracle\Java\javapath;F:\Maven\apache-maven-3.1.1\bin;D:\ProgramFiles\Java\jdk1.8.0_91\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;D:\ProgramFiles\nodejs\;D:\ProgramFiles\Git\cmd;F:\Maven\apache-maven-3.1.1\bin;;D:\ProgramFiles\Microsoft VS Code\bin;C:\Users\Chen\AppData\Roaming\npm;C:\Users\Chen\Desktop;;.]
+2018-05-02 21:00:10.856  INFO 6364 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-02 21:00:10.856  INFO 6364 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1932 ms
+2018-05-02 21:00:11.047  INFO 6364 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-02 21:00:11.053  INFO 6364 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-02 21:00:11.053  INFO 6364 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-02 21:00:11.053  INFO 6364 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-02 21:00:11.053  INFO 6364 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-02 21:00:11.223  INFO 6364 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-02 21:00:11.605  WARN 6364 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerAdapter' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcValidator' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.validation.Validator]: Factory method 'mvcValidator' threw exception; nested exception is javax.validation.NoProviderFoundException: Unable to create a Configuration, because no Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2018-05-02 21:00:11.609  INFO 6364 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-05-02 21:00:11.634  INFO 6364 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-05-02 21:00:11.637 ERROR 6364 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Bean Validation API is on the classpath but no implementation could be found
+
+Action:
+
+Add an implementation, such as Hibernate Validator, to the classpath
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+以上为我搭建SpringBoot项目过程中的一份项目启动日志,其中发生了一个令人意外而恶心、疑惑而无力的事情，那就是该项目在不同的电脑上，有的可以正常运行，有的报了上面的日志，而我的电脑就是第二个'有的'之一。于是我研究了许久，究其根源是"Hibernate Validator"这个jar没有引入，而在我的项目中并没有使用到这个jar，是不是很无奈呢...！此处解决办法如下：
+在你的SpringBoot项目的pom文件中加入以下依赖：
+<dependency>
+	<groupId>org.hibernate</groupId>
+	<artifactId>hibernate-validator</artifactId>
+	<version>5.0.1.Final</version>
+</dependency>
